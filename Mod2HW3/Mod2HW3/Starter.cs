@@ -1,15 +1,22 @@
 ﻿using System;
 using Mod2HW3.Providers;
 using Mod2HW3.Services;
+using Mod2HW3.Services.Abstractions;
 
 namespace Mod2HW3
 {
     public class Starter
     {
-        private readonly GiftService _giftService = new();
-        private readonly SweetStuffProvider _sweetStuffProvider = new();
-        private double _giftWeight = 0.0d;
+        private readonly IGiftService _giftService;
+        private readonly ISweetsProvider _sweetStuffProvider;
+        private double _giftWeight;
         private SweetStuff[] _gift;
+
+        public Starter()
+        {
+            _giftService = new GiftService();
+            _sweetStuffProvider = new SweetStuffProvider();
+        }
         public void Run()
         {
             _gift = _giftService.AddToTheGift(_sweetStuffProvider.GetSweets());
