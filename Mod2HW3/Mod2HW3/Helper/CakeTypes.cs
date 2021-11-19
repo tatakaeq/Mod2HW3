@@ -2,11 +2,11 @@
 {
     public enum CakeTypes
     {
-        ButterCake,
-        PoundCake,
-        SpongeCake,
-        GenoiseCake,
-        BiscuitCake,
-        ChiffonCake
+        Butter,
+        Pound,
+        Sponge,
+        Genoise,
+        Biscuit,
+        Chiffon
     }
 }

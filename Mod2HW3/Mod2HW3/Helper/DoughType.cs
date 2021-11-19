@@ -2,9 +2,9 @@
 {
     public enum DoughType
     {
-        LeavenedDough,
-        UnleavenedDough,
-        MealyDough,
+        Leavened,
+        Unleavened,
+        Mealy,
         PateBrisee
     }
 }

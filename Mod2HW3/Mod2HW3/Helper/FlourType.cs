@@ -2,9 +2,9 @@
 {
     public enum FlourType
     {
-        AllPurposeFlour,
-        WhiteWholeWheatFlour,
-        PastryFlour,
-        SelfRisingFlour
+        AllPurpose,
+        WhiteWholeWheat,
+        Pastry,
+        SelfRising
     }
 }

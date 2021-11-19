@@ -2,8 +2,8 @@
 {
     public enum CreamType
     {
-        ButterCream,
-        WhippedCream,
+        Butter,
+        Whipped,
         RoyalIcing,
         Meringue
     }
